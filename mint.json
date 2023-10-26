@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Документация",
+  "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/Group 1000004430.svg",
-    "light": "/logo/Group 1000004430.svg"
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
-  "favicon": "/logo/Group 1000004430.svg",
+  "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#385BDD",
+    "primary": "#0D9373",
     "light": "#07C983",
     "dark": "#0D9373",
     "anchors": {
@@ -17,19 +17,56 @@
   },
   "topbarLinks": [
     {
-      "name": "Поддержка",
+      "name": "Support",
       "url": "mailto:hi@mintlify.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://dashboard.mintlify.com"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://mintlify.com/docs"
+    },
+    {
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Настройки контекста",
+      "group": "Get Started",
+      "pages": ["introduction", "quickstart", "development"]
+    },
+    {
+      "group": "Essentials",
+      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+    },
+    {
+      "group": "API Documentation",
+      "pages": ["api-reference/introduction"]
+    },
+    {
+      "group": "Endpoint Examples",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
+        "api-reference/endpoint/get",
+        "api-reference/endpoint/create",
+        "api-reference/endpoint/delete"
       ]
     }
   ],
