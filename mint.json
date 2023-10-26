@@ -22,7 +22,7 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Демо",
+    "name": "Демонстрация",
     "url": "https://brainfeed.ai/#form"
   },
   "navigation": [
@@ -38,6 +38,12 @@
         "answer_quality/context_message",
         "answer_quality/system_message",
         "answer_quality/prompts"
+      ]
+    },
+    {
+      "group": "Интеграции",
+      "pages": [
+        
       ]
     }
   ]
