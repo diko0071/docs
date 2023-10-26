@@ -17,12 +17,12 @@
   },
   "topbarLinks": [
     {
-      "name": "Связаться с нами",
+      "name": "Поддержка",
       "url": "info@brainfeed.ai"
     }
   ],
   "topbarCtaButton": {
-    "name": "Записаться на демо",
+    "name": "Демо",
     "url": "https://brainfeed.ai/#form"
   },
   "navigation": [
