@@ -8,8 +8,8 @@
   "favicon": "/logo/Group 1000004430.svg",
   "colors": {
     "primary": "#385BDD",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "light": "#385BDD",
+    "dark": "#385BDD",
     "anchors": {
       "from": "#385BDD",
       "to": "#385BDD"
