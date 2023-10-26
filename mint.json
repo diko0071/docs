@@ -50,21 +50,17 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Обзор платформы",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "introduction"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Качество ответов",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
+        "answer_quality/context_message",
+        "answer_quality/system_message",
+        "answer_quality/prompts"
       ]
     },
     {
