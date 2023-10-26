@@ -2,12 +2,12 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/Group 1000004430.svg",
+    "light": "/logo/Group 1000004430.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/Group 1000004430.svg",
   "colors": {
-    "primary": "#0D9373",
+    "primary": "#385BDD",
     "light": "#07C983",
     "dark": "#0D9373",
     "anchors": {
@@ -50,17 +50,21 @@
   ],
   "navigation": [
     {
-      "group": "Обзор платформы",
+      "group": "Get Started",
       "pages": [
-        "introduction"
+        "introduction",
+        "quickstart",
+        "development"
       ]
     },
     {
-      "group": "Качество ответов",
+      "group": "Essentials",
       "pages": [
-        "answer_quality/context_message",
-        "answer_quality/system_message",
-        "answer_quality/prompts"
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation"
       ]
     },
     {
