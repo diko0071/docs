@@ -1,71 +1,47 @@
 ---
-title: Introduction
-description: 'Welcome to the home of your new documentation'
+title: Usedesk
+description: 'Создание и настройка канала для чата и API в Brainfeed'
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
+Заголовок: Создание и настройка канала для чата и API в Brainfeed
 
-## Setting up
+Описание: В этом руководстве описывается процесс создания и настройки канала для чата и API в Brainfeed. Это включает в себя создание канала, настройку прав доступа для групп агентов, автоматическое назначение на бота и тестирование виджета.
 
-The first step to world-class documentation is setting up your editing environnments.
+---
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+**1. Создание канала для чата**
 
-## Make it yours
+- В боковом меню выберите “Каналы”.
+- Если существующего канала для чата нет, нажмите “Добавить канал”.
+- Выберите тип “Чат”.
+- (Опционально) Измените название канала и настройки виджета, затем сохраните изменения.
 
-Update your docs to your brand and add valuable content for the best user conversion.
+**2. Создание API-канала**
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/showcase"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+- В боковом меню выберите “Каналы”.
+- Выберите тип “API”.
+- Заполните название канала.
+- В поле redirect url укажите https://app.brainfeed.space/api/search/?access_key=<your-api-key>&usedesk=1
+- Выставите галочку в поле “JSON запрос” и “Отправлять в UTF-8”.
+- В поле  “Cледить за каналами” выберите название созданного чата из первого пункта.
+- Установите отслеживание запросов и чатов на “Новое сообщение”.
+- Сохраните канал и передайте значение из поля “Секретный ключ” разработке Brainfeed.
+
+**3. Настройка прав на группы агентов**
+
+- Создайте учетную запись для бота или выберите существующую. ВАЖНО: для этой учетной записи должны быть выставлены следующие разрешения: работа в каналах и просмотр каналов для созданных каналов чата и API.
+- Передайте id созданной учетной записи разработке Brainfeed.
+- Для группы операторов выставите аналогичные разрешения по работе в каналах и передайте id группы разработке Brainfeed.
+
+**4. Автоматическое назначение на бота**
+
+- Выберите вкладку “Автоматизация” -> “Правила”.
+- Добавьте новое правило.
+- Заполните пункты: “Когда”: “Клиент написал сообщение”, “Что”: Все условия “Исполнитель” “Равно” “-”; “Канал” “Равно” “Имя созданного чата из начала инструкции”, “Сделать”: “Обновить исполнителя” “Учетка бота”.
+
+**5. Тестирование виджета**
+
+- Во вкладке каналы выберите созданный канал с типом “Чат” из первого пункта.
+- В самом низу страницы скопируйте значение из поля “Код виджета”.
+- Создайте новую базу знаний, в поле скрипты в подвале вставьте ссылку из п.2.
+- При переходе к этой базе знаний можно тестировать бота.
