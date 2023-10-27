@@ -7,12 +7,12 @@
   },
   "favicon": "/logo/Group 1000004430.svg",
   "colors": {
-    "primary": "#385BDD",
-    "light": "#385BDD",
-    "dark": "#385BDD",
+    "primary": "#3273DC",
+    "light": "#3273DC",
+    "dark": "#3273DC",
     "anchors": {
-      "from": "#385BDD",
-      "to": "#385BDD"
+      "from": "#3273DC",
+      "to": "#3273DC"
     }
   },
   "topbarLinks": [
