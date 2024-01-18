@@ -33,7 +33,7 @@
       ]
     },
     {
-      "group": "Качество ответов",
+      "group": "Настройка бота",
       "pages": [
         "answer_quality/context_message",
         "answer_quality/system_message",
